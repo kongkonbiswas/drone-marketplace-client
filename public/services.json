@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "SAJEK RESORT",
+        "price": "7000",
+        "description": "Sajek Valley (Bengali: সাজেক উপত্যকা) is one of the popular tourist spots in Bangladesh situated among the hills of the Kasalong range of mountains in Sajek union, Baghaichhari Upazila in Rangamati District.[3] The valley is 2,000 feet (610 m) above sea level.[4] Sajek valley is known as the Queen of Hills & Roof of Rangamati.",
+        "img": "https://thefinancialexpress.com.bd/uploads/1623685867.jpg"
+    },
+    {
+        "id": 2,
+        "name": "BANDARBAN SPOT",
+        "price": "5600",
+        "description": "Bandarban (Bengali: বান্দরবান), is a district in South-Eastern Bangladesh, and a part of the Chittagong Division.[4] It is one of the three hill districts of Bangladesh and a part of the Chittagong Hill Tracts, the others being Rangamati District and Khagrachhari District. Bandarban city is the headquarters of the Bandarban district. Bandarban district (4,479 km2) is not only the most remote district of the country, but also the least populous (population 292,900).[5] There is an army contingent at Bandarban Cantonment.",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxjjrKFSXwai7PjHWk4HozKP2RttDJN8PQ7w&usqp=CAU"
+    },
+    {
+        "id": 3,
+        "name": "SUNDARBAN TOUR",
+        "price": "2750",
+        "description": "Sundarbans is a mangrove area in the delta formed by the confluence of the Ganges, Brahmaputra and Meghna Rivers in the Bay of Bengal. It spans from the Hooghly River in India's state of West Bengal to the Baleswar River in Bangladesh's division of Khulna. Sundarbans National Park, Sundarbans West, Sundarbans South and Sundarbans East Wildlife Sanctuaries",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdsA4enN3WE7VvJB7jU18LmUlTNjMQ0RNAjQ&usqp=CAU"
+    },
+    {
+        "id": 4,
+        "name": "COX'S BAZAR SEA BEACH",
+        "price": "4080",
+        "description": "Cox's Bazar Beach, located at Cox's Bazar, Bangladesh, is the longest natural sea beach in the world running 150 kilometres (93 mi).[1][2][3][4][5] and 3rd longest beach after Praia do Cassino of Brazil and Ninety Mile Beach of Australia. It is the top tourist destination of Bangladesh.",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjdSzl0ge4wQ7oy67obq9zFDw-e9gfVQD2LQ&usqp=CAU"
+    },
+    {
+        "id": 5,
+        "name": "KUAKATA SEA BEACH",
+        "price": "7500",
+        "description": "Kuakata (Bengali: কুয়াকাটা) is a town in southern Bangladesh known for its panoramic sea beach.[1][2] Kuakata beach is a sandy expanse 18 kilometres (11 mi) long and 3 kilometres (1.9 mi) wide.[3] From the beach one can have an unobstructed view of both sunrise and sunset over the Bay of Bengal.",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Kuakata_beach.jpg/280px-Kuakata_beach.jpg"
+    },
+    {
+        "id": 6,
+        "name": "St. Martin's Island",
+        "price": "10300",
+        "description": "St. Martin's Island (Bengali: সেন্ট মার্টিন্স দ্বীপ) is a small island (area only 3 km2) in the northeastern part of the Bay of Bengal, about 9 km south of the tip of the Cox's Bazar-Teknaf peninsula, and forming the southernmost part of Bangladesh.",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Saint-martin%27s-island.JPG/260px-Saint-martin%27s-island.JPG"
+    }
+]
