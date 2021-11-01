@@ -1,25 +1,25 @@
 import React from 'react';
 
-import doctor1 from '../../../images/banner/Dr. Nighat IMG_4760.jpg';
-import doctor2 from '../../../images/banner/Brig Gen Nazmul Ahsan.jpg'
-import doctor3 from '../../../images/banner/doctor3.jpg'
+import doctor1 from '../../../images/banner/download1.jpg';
+import doctor2 from '../../../images/banner/download2.jpg'
+import doctor3 from '../../../images/banner/download3.jpg'
 import Expert from '../Expert/Expert';
 
 const experts = [
   {
     img: doctor1,
-    name: "DR. NIGHAT ARA",
-    expertize: "CORDIOLOGY",
+    name: "Travel Resort Of America",
+    expertize: "America",
   },
   {
     img: doctor2,
-    name: "PROF. DR. BRIG GEN (RTD) MD NAZMUL AHSAN",
-    expertize: "ANESTHESIOLOGY",
+    name: "Travel Resort",
+    expertize: "Austrolia",
   },
   {
     img: doctor3,
-    name: "PROF. DR. MD. SALIM SHAKUR PHD",
-    expertize: "PAEDIATRICS",
+    name: "Sycamore Lodge",
+    expertize: "London",
   },
 ];
 
