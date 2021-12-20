@@ -5,14 +5,14 @@ const ManageServices = () => {
   const [control, setControl] = useState(false);
 
   useEffect(() => {
-    const url = "http://localhost:5000/allService";
+    const url = "https://arcane-brushlands-82078.herokuapp.com/allService";
     fetch(url)
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, [control]);
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:5000/delete/${id}`, {
+    fetch(`https://arcane-brushlands-82078.herokuapp.com/delete/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

@@ -1,12 +1,12 @@
-.news-image {
+.card-image {
   width: 100%;
   height: 100%;
 }
-.btn-news {
+.btn-card {
   background-color: #2a343a;
   color: white;
 }
-.btn-news:hover {
+.btn-card:hover {
   background-color: green;
   color: white;
 }

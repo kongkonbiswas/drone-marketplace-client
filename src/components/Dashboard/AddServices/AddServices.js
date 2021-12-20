@@ -21,7 +21,7 @@ const AddServices = () => {
       imageURL: imageURL,
     };
     console.log(newService);
-    fetch(`http://localhost:5000/addService`, {
+    fetch(`https://arcane-brushlands-82078.herokuapp.com/addService`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -8,13 +8,15 @@ const BookingList = () => {
 
   useEffect(() => {
     setBookingList([]);
-    fetch(`http://localhost:5000/orders?email=${user.email}`)
+    fetch(
+      `https://arcane-brushlands-82078.herokuapp.com/orders?email=${user.email}`
+    )
       .then((res) => res.json())
       .then((data) => setBookingList(data));
   }, [control]);
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:5000/delteOrder/${id}`, {
+    fetch(`https://arcane-brushlands-82078.herokuapp.com/delteOrder/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

@@ -3,7 +3,7 @@ import Services from "../../SharedComponents/Services/Services";
 import Customer from "../Customer/Customer";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
-import News from "../News/News";
+import Latest from "../Latest/Latest";
 import Reviews from "../Reviews/Reviews";
 
 const HomePage = () => {
@@ -13,7 +13,7 @@ const HomePage = () => {
       <Customer />
       <Services />
       <Reviews />
-      <News />
+      <Latest />
       <Footer />
     </div>
   );

@@ -6,7 +6,7 @@ const Reviews = () => {
   const [feedbacks, setFeedbacks] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/allReview`)
+    fetch(`https://arcane-brushlands-82078.herokuapp.com/allReview`)
       .then((res) => res.json())
       .then((data) => setFeedbacks(data));
   }, []);

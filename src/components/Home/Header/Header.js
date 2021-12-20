@@ -2,8 +2,8 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import NavBar from "../Navbar/Navbar";
-// import Typical from "react-typical";
-import Typewriter from "typewriter-effect";
+import Typical from "react-typical";
+// import Typewriter from "typewriter-effect";
 import "./Header.css";
 
 const Header = () => {
@@ -18,7 +18,7 @@ const Header = () => {
           </h1>
           <h2 className="mt-5 h2">
             <b>
-              <Typewriter
+              <Typical
                 loop={Infinity}
                 wrapper="b"
                 steps={[

@@ -16,7 +16,9 @@ const Dashboard = () => {
   const [isAdmin, setIsAdmin] = useState({});
   const { user } = useAuth();
   useEffect(() => {
-    fetch("http://localhost:5000/admin?email=" + user.email)
+    fetch(
+      "https://arcane-brushlands-82078.herokuapp.com/admin?email=" + user.email
+    )
       .then((res) => res.json())
       .then((data) => setIsAdmin(data));
   }, [user]);

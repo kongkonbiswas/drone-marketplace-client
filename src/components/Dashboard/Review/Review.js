@@ -18,7 +18,7 @@ const Review = () => {
       image: user.photoURL,
     };
     console.log(newReview);
-    fetch(`http://localhost:5000/addReview`, {
+    fetch(`https://arcane-brushlands-82078.herokuapp.com/addReview`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -26,7 +26,7 @@ const PlaceOrder = () => {
     };
     console.log(orderDetails);
 
-    fetch("http://localhost:5000/addOrder", {
+    fetch("https://arcane-brushlands-82078.herokuapp.com/addOrder", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -42,7 +42,7 @@ const PlaceOrder = () => {
   };
 
   useEffect(() => {
-    const url = `http://localhost:5000/service/${id}`;
+    const url = `https://arcane-brushlands-82078.herokuapp.com/service/${id}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setService(data));

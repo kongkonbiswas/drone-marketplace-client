@@ -9,7 +9,7 @@ const MakeAdmin = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (email) => {
-    const url = `http://localhost:5000/addAdmin`;
+    const url = `https://arcane-brushlands-82078.herokuapp.com/addAdmin`;
     fetch(url, {
       method: "POST",
       headers: {

@@ -6,7 +6,7 @@ const OrderList = () => {
   const [orderList, setOrderList] = useState([]);
   useEffect(() => {
     setOrderList([]);
-    const url = "http://localhost:5000/allOrder";
+    const url = "https://arcane-brushlands-82078.herokuapp.com/allOrder";
     fetch(url)
       .then((res) => res.json())
       .then((data) => setOrderList(data));

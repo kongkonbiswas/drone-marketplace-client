@@ -5,7 +5,7 @@ const TableData = ({ order }) => {
     console.log(e.target.value);
     order.status = e.target.value;
     console.log(order);
-    fetch(`http://localhost:5000/update/${order._id}`, {
+    fetch(`https://arcane-brushlands-82078.herokuapp.com/update/${order._id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
