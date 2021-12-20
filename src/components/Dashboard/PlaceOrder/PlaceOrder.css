@@ -1,0 +1,9 @@
+.pay-btn {
+  border: 1px solid #81fb48;
+  background-color: #48e6fb;
+  color: white;
+}
+.pay-btn:hover {
+  background-color: white;
+  color: #48b9fb;
+}

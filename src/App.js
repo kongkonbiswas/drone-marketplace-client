@@ -1,61 +1,47 @@
-import './App.css';
-import Home from "./Pages/Home/Home/Home";
-import About from "./Pages/Home/About/About";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import NotFound from "./Pages/NotFound/NotFound";
-import Booking from "./Pages/Booking/Booking/Booking";
-import Login from "./Pages/Login/Login/Login";
-import Header from "./Pages/Shared/Header/Header";
-import Footer from "./Pages/Footer/Footer";
-import AuthProvider from "./contexts/AuthProvider";
-import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
-import Register from "./Pages/Register/Register";
-import Experts from "./Pages/Home/Experts/Experts";
-import AddService from "./Pages/AddService/AddService";
-import ManageServices from './Pages/ManageServices/ManageServices';
+import React from "react";
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import HomePage from "./components/Home/HomePage/HomePage";
+import Login from "./components/Login/Login";
+import Register from "./components/Register/register";
+import NavBar from "./components/Home/Navbar/Navbar";
+import Dashboard from "./components/Dashboard/Dashboard/Dashboard";
+import AuthProvider from "./context/AuthProvider";
+import PrivetRoute from "./components/Login/PrivetRoute";
+import Explore from "./components/Home/Explore/Explore";
+import NotFound from "./components/Home/NotFound/NotFound";
 
 function App() {
   return (
-    <div className="App">
-      <AuthProvider>
-        <BrowserRouter>
-          <Header></Header>
-          <Switch>
-            <Route exact path="/">
-              <Home></Home>
-            </Route>
-            <Route path="/home">
-              <Home></Home>
-            </Route>
-            <Route path="/login">
-              <Login></Login>
-            </Route>
-            <Route path="/about">
-              <About></About>
-            </Route>
-            <Route path="/patners">
-              <Experts></Experts>
-            </Route>
-            <Route path="/register">
-              <Register></Register>
-            </Route>
-            <PrivateRoute path="/booking/:serviceId">
-              <Booking></Booking>
-            </PrivateRoute>
-            <Route path="/addService">
-              <AddService></AddService>
-            </Route>
-            <Route path="/manageServices">
-              <ManageServices></ManageServices>
-            </Route>
-            <Route path="*">
-              <NotFound></NotFound>
-            </Route>
-          </Switch>
-          <Footer></Footer>
-        </BrowserRouter>
-      </AuthProvider>
-    </div>
+    <AuthProvider>
+      <Router>
+        <Switch>
+          <Route path="/home">
+            <HomePage />
+          </Route>
+          <Route path="/login">
+            <NavBar></NavBar>
+            <Login />
+          </Route>
+          <Route path="/register">
+            <NavBar></NavBar>
+            <Register />
+          </Route>
+          <PrivetRoute path="/dashboard">
+            <Dashboard />
+          </PrivetRoute>
+          <Route exact path="/">
+            <HomePage />
+          </Route>
+          <Route path="/explore">
+            <Explore />
+          </Route>
+          <Route path="*">
+            <NotFound></NotFound>
+          </Route>
+        </Switch>
+      </Router>
+    </AuthProvider>
   );
 }
 

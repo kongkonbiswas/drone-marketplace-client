@@ -1,0 +1,9 @@
+.title-dialogue {
+  padding-left: 20px;
+  border-left: 3px solid #e2f867;
+}
+.customer-description {
+  padding-left: 20px;
+  line-height: 30px;
+  color: #292929;
+}

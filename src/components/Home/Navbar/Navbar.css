@@ -1,0 +1,18 @@
+.logo {
+  height: 50px;
+}
+.Navbar {
+  background-color: #2a323a;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  z-index: 100;
+}
+.website-name {
+  letter-spacing: 1px;
+}
+.business {
+  display: block;
+  margin-top: -2px;
+  letter-spacing: 1.7px;
+}

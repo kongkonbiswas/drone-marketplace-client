@@ -1,0 +1,52 @@
+.footer {
+  margin-top: 160px;
+  background-color: #292929;
+  border-top: 3px solid #b6fb48;
+}
+.contact span {
+  display: inline-block;
+  margin-left: 8px;
+}
+.contact span:hover {
+  color: aqua !important;
+}
+.item-link {
+  color: white;
+}
+.item-link span {
+  display: inline-block;
+  margin-left: 5px;
+}
+.item-link:hover {
+  color: #48fbc5 !important;
+}
+.contact-btn {
+  border: 1px solid #48d7fb;
+  background-color: #48fb93;
+  color: white;
+}
+.contact-btn:hover {
+  background-color: white;
+  color: black;
+}
+.copyright {
+  background-color: #2a323a;
+}
+.social-media {
+  min-width: 150px;
+}
+.icon-item {
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  padding: 1px;
+  height: 25px;
+  width: 25px;
+  background-color: #4a4a4a;
+}
+.icon-item:hover {
+  background-color: #48f5fb;
+}
+.social-icon {
+  color: white;
+}

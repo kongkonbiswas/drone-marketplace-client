@@ -1,0 +1,32 @@
+.feature {
+  margin: 15px;
+  border: 1px solid #292929;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.13, 3.4, 0.58, 1);
+}
+.feature:hover {
+  background-color: #2a323a;
+  color: white !important;
+}
+small {
+  font-size: 11px;
+}
+.feature-icon {
+  font-size: 45px;
+  padding: 15px;
+  color: #90fb48;
+}
+.feature-more {
+  height: 35px;
+  width: 35px;
+  background-color: #489cfb;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.feature-more .icon {
+  background-color: transparent;
+  color: white;
+  font-size: 35px !important;
+}

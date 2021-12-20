@@ -1,0 +1,23 @@
+.reviewCard {
+  margin-top: 70px;
+  border: 1px solid #928888;
+}
+.client-image {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin-top: -110px;
+}
+.card-description p {
+  color: gray;
+  overflow-y: scroll;
+  height: 150px;
+}
+.rating b {
+  display: inline-block;
+  margin-right: 8px;
+}
+.rating-icon {
+  margin: 2px;
+  color: orange;
+}

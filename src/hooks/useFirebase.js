@@ -1,37 +1,88 @@
+import { useEffect, useState } from "react";
+import initializeAuthentication from "../Firebase/firebase.init";
 import {
   getAuth,
   signInWithPopup,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  updateProfile,
   GoogleAuthProvider,
-  signOut,
   onAuthStateChanged,
+  signOut,
 } from "firebase/auth";
-import { useState, useEffect } from "react";
-import initializeAuthentication from "./../Pages/Login/Firebase/firebase.init";
 
 initializeAuthentication();
 
 const useFirebase = () => {
   const [user, setUser] = useState({});
   const [isLoading, setIsLoading] = useState(true);
+  const [admin, setAdmin] = useState(false);
+  const [authError, setAuthError] = useState("");
 
   const auth = getAuth();
+  const GoogleProvider = new GoogleAuthProvider();
 
-  const signInUsingGoogle = () => {
+  // Google Sign In
+  const signInUsingGoogle = (location, history) => {
     setIsLoading(true);
-    const googleProvider = new GoogleAuthProvider();
-    
-    return signInWithPopup(auth, googleProvider)
-      // .then((result) => {
-      //   setUser(result.user);
-      // }).catch(error => {
-      //   console.log(error.message)
-      // })
-      // .finally(() => setIsLoading(false));
+    signInWithPopup(auth, GoogleProvider)
+      .then((result) => {
+        setIsLoading(true);
+        setUser(result.user);
+        setAuthError("");
+        const destination = location?.state?.from || "/";
+        history.replace(destination);
+      })
+      .catch((error) => {
+        setAuthError(error.message);
+      })
+      .finally(() => setIsLoading(false));
   };
 
-  // observe user state change
+  // gmail register in
+  const registerUser = (email, password, name, location, history) => {
+    setIsLoading(true);
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        const destination = location?.state?.from || "/";
+        history.replace(destination);
+        setIsLoading(true);
+        setAuthError("");
+        const newUser = { email, displayName: name };
+        // send name to firebase after creation
+        setUser(newUser);
+        updateProfile(auth.currentUser, {
+          displayName: name,
+        })
+          .then(() => {})
+          .catch((error) => {});
+      })
+      .catch((error) => {
+        setAuthError(error.message);
+        console.log(error);
+      })
+      .finally(() => setIsLoading(false));
+  };
+
+  // gmail login in
+  const loginUser = (email, password, location, history) => {
+    setIsLoading(true);
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in
+        const destination = location?.state?.from || "/";
+        history.replace(destination);
+        setAuthError("");
+      })
+      .catch((error) => {
+        setAuthError(error.message);
+      })
+      .finally(() => setIsLoading(false));
+  };
+
+  // observer for user
   useEffect(() => {
-    const unsubscribed = onAuthStateChanged(auth, (user) => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         setUser(user);
       } else {
@@ -39,21 +90,41 @@ const useFirebase = () => {
       }
       setIsLoading(false);
     });
-    return () => unsubscribed;
-  }, []);
+    return () => unsubscribe();
+  }, [auth]);
 
-  const logOut = () => {
-    setIsLoading(true);
-    signOut(auth)
-      .then(() => {})
-      .finally(() => setIsLoading(false));
+  const logout = () => {
+    signOut(auth).then(() => {
+      setUser({});
+    });
   };
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setUser(user);
+      }
+    });
+  }, [auth]);
+
+  useEffect(() => {
+    fetch(`http://localhost:5000/users/admin?email/${user.email}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setAdmin(data.isAdmin);
+      });
+  }, [user.email]);
 
   return {
     user,
+    admin,
+    loginUser,
+    authError,
     isLoading,
+    setIsLoading,
+    registerUser,
     signInUsingGoogle,
-    logOut,
+    logout,
   };
 };
 

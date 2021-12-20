@@ -1,0 +1,82 @@
+.header {
+  margin-bottom: 60px;
+  height: 520px;
+  background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 1)
+    ),
+    url("../../../images/bg.jpg");
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+}
+.header .h1,
+.h2 {
+  color: transparent;
+  display: block;
+  position: relative;
+  animation: text_reveal 0.5s ease forwards;
+  animation-delay: 1s;
+}
+.header .h1 {
+  font-size: 55px;
+  animation-delay: 1s;
+}
+.header .h2 {
+  font-size: 40px;
+  animation-delay: 2s;
+}
+
+.header .span {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  background: #a7fb48;
+  animation: overlays 1s ease forwards;
+  animation-delay: 0.5s;
+}
+.header .h1 .span {
+  animation-delay: 0.5s;
+}
+.header .h2 .span {
+  animation-delay: 1.5s;
+}
+.header-top {
+  margin-top: 120px;
+}
+@keyframes text_reveal {
+  100% {
+    color: white;
+  }
+}
+@keyframes text_reveal_name {
+  100% {
+    color: #90fb48;
+  }
+}
+@keyframes overlays {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .h1 {
+    font-size: 27px !important;
+  }
+  .h2 {
+    font-size: 22px !important;
+  }
+  .header-top {
+    margin-top: 140px;
+  }
+}

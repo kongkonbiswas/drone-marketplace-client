@@ -1,0 +1,75 @@
+.service-card {
+  position: relative;
+  height: 400px;
+}
+.card-image {
+  position: relative;
+  height: 350px;
+}
+.service-charge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #48fb75;
+  color: white;
+  font-size: 30px;
+}
+.service-status {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+}
+.color-Pending {
+  color: #fb489c;
+  background-color: rgba(251, 72, 72, 0.26);
+}
+.color-Ongoing {
+  color: cyan;
+  background-color: rgba(0, 255, 255, 0.26);
+}
+.color-Done {
+  color: green;
+  background-color: rgba(0, 128, 0, 0.26);
+}
+.black-div,
+.color-div,
+.white-div {
+  width: 10px;
+  height: 21px;
+  margin-right: 5px;
+  transform: skewX(-35deg);
+  background-color: #2a323a;
+}
+.color-div {
+  background-color: #2bf7a8;
+}
+.white-div {
+  background-color: white;
+}
+.service-details {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #48fbf2;
+  color: white;
+  transform: scaleY(0);
+  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.service-card:hover .service-details {
+  transform: scaleY(1);
+}
+.service-details-btn {
+  background-color: #3569fa;
+  color: white;
+}
+.service-details-btn:hover {
+  background-color: white;
+}

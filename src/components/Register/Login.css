@@ -1,0 +1,46 @@
+.login {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+.login-card {
+  margin-top: 90px;
+  box-shadow: 0 0 6px gray;
+}
+.btn-customise {
+  border-radius: 30px;
+  border: 1px solid #48fbe3;
+  height: 50px;
+  width: 400px;
+}
+.btn-customise:hover {
+  border: 2px solid #a7fb48;
+}
+.btn-customise img {
+  margin: 0 8px;
+  height: 30px;
+}
+.login-logo {
+  width: 17rem;
+}
+.bg-line-color-1,
+.bg-line-color-2,
+.bg-line-black {
+  top: 11%;
+  left: -10%;
+  position: absolute;
+  height: 55px;
+  width: 170%;
+  background-color: #48fb51;
+  transform: rotate(-25deg);
+  z-index: -5;
+}
+.bg-line-color-2 {
+  top: 35%;
+}
+.bg-line-black {
+  top: 23%;
+  background-color: #2a323a;
+}
+@media screen and (max-width: 540px) {
+}
