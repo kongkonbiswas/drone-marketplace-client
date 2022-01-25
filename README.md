@@ -1,41 +1,34 @@
-## Available Title
+# Online drone-marketplace Website at github
+# user:-admin Pass:-123456
+Have a look the live preview [Click here to Check Live Site](https://drone-marketplace-423f4.web.app/).
 
-In the project directory, you can run:
+[Linkedin](https://www.linkedin.com/in/kongkon-biswas-a2374314a/).
 
-### `npm run start-dev`
-Fast install nodemon golbal and run....
-Runs the app in the development mode.\
-Open [http://localhost:5000](http://localhost:5000) to view it in the browser
+[E-mail](kongkonbiswas3241@gmail.com).
 
-### `npm start`
+# Key Features
+Drone Marketplace website. Users can order products and check their previous order history with status(Approved, Cancel or Shipping). This website has a functional admin panel with restricted access(only admin can access) section where
+admin can.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Simple HTML file
+
+2. scrolling smooth
+
+4. nostalgic image experience
+
+5. Style by CSS
+
+6. Customized URL
 
 
-### `npm run build`
+#User 4. Place Order 5. Review 6. Manage Order Cancel or Delate
 
-For hosting netlify you need to creat a build folder fast and then host this website
+#Also through this website you can buy different types of products and beautiful drones and everyone because of the beautiful design
 
+#And this website has a nice report that all products and services can be controlled through that dashboard
 
+#Here I have added the payment method in whatever you use like love without any hassle
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-Here are some advanced configration about my web on facebook
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-Here are some app like firebase, netlify, hiroku will host your website
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---Thank You---
